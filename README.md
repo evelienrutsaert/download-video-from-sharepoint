@@ -43,8 +43,6 @@ Open een terminal (Windows: CMD als administrator, macOS: Terminal) en typ:
 yt-dlp "JE-INGEKORTE-URL" -o MijnVideo.mp4
 ```
 
-> ⚠️ Let op: Zorg dat de URL eindigt op `format=dash` (geen extra `h` of andere tekens).
-
 ---
 
 ## 🛠️ Methode 2: Download met `ffmpeg`
@@ -89,8 +87,6 @@ https://germanywestcentral1-mediap.svc.ms/transform/videomanifest?provider=spo&.
 ---
 
 > 🧠 Tip: Werk je vaak met dit soort video's? Zet deze instructies in een snelkoppeling of script voor gemak.
-
-
 
 # 📥 Downloading MS Teams / SharePoint / Stream Videos as a Participant
 
@@ -137,8 +133,6 @@ Open a terminal (Command Prompt as Admin on Windows or Terminal on macOS) and ru
 yt-dlp "YOUR-SHORTENED-URL" -o MyVideo.mp4
 ```
 
-> ⚠️ Make sure your URL ends with `format=dash` and does **not** have any extra characters (like `dashh`).
-
 ---
 
 ## 🛠️ Method 2: Download using `ffmpeg`
@@ -166,11 +160,11 @@ ffmpeg -i "YOUR-SHORTENED-URL" -codec copy MyVideo.mp4
 
 ## 🧩 Common Errors & Fixes
 
-| Error Message                            | Solution                                                                 |
-|------------------------------------------|--------------------------------------------------------------------------|
-| `HTTP Error 500: Internal Server Error`  | Check that the URL ends exactly with `format=dash`                       |
-| `Unsupported URL` in yt-dlp              | Try downloading with ffmpeg instead                                      |
-| Video freezes or fails to download       | Try reloading the page and copying the link again, or use another browser |
+| Error Message                           | Solution                                                                  |
+| --------------------------------------- | ------------------------------------------------------------------------- |
+| `HTTP Error 500: Internal Server Error` | Check that the URL ends exactly with `format=dash`                        |
+| `Unsupported URL` in yt-dlp             | Try downloading with ffmpeg instead                                       |
+| Video freezes or fails to download      | Try reloading the page and copying the link again, or use another browser |
 
 ---
 
@@ -183,3 +177,5 @@ https://germanywestcentral1-mediap.svc.ms/transform/videomanifest?provider=spo&.
 ---
 
 > 💡 Tip: If you do this often, consider writing a small shell or batch script to automate it.
+
+source: https://www.reddit.com/user/Such-Necessary-9117/
